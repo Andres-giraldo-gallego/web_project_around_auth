@@ -49,6 +49,7 @@ function App() {
       fechUser().then((data) => {
         getUserInfo().then((response) => {
           setCurrentUser({ ...data, email: response.email });
+          navigate('/');
         });
       });
     }
@@ -192,7 +193,7 @@ function App() {
               <Route
                 path='/'
                 element={
-                  <ProtectedRoute>
+                  <ProtectedRoute isLogin={isLogin}>
                     <Main
                       handleOpenPopup={handleOpenPopup}
                       handleClosePopup={handleClosePopup}
