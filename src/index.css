@@ -7,5 +7,5 @@
 @import url('./blocks/footer.css');
 @import url('./blocks/popup.css');
 @import url('./blocks/dialog.css');
-@import url('./blocks/login.css');
-@import url('./blocks/register.css');
+@import url('./blocks/Login.css');
+@import url('./blocks/Register.css');
